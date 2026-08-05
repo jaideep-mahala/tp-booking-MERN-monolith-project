@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Navbar from "../../components/common/navbar/navbar.jsx";
 import Footer from "../../components/common/footer/footer.jsx";
+import LoginPage from "../Login/login.jsx";
 
 
 function Home() {
