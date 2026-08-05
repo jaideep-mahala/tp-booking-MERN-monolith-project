@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import logo from "./assets/logo.png"; // adjust path if your assets folder is elsewhere
+import Navbar from "../../components/common/navbar/navbar.jsx";
+import Footer from "../../components/common/footer/footer.jsx";
 
 
 function Home() {
@@ -32,28 +33,7 @@ function Home() {
 
   return (
     <div className="home">
-      <header className="header">
-        <div className="container nav">
-          <div className="brand">
-            <img src={logo} alt="RailVista Logo" className="brand-logo" />
-            <span className="brand-name">RailVista</span>
-          </div>
-
-          <nav className="nav-links">
-            <a href="#trains">Trains</a>
-            <a href="#pnr">PNR Status</a>
-            <a href="#live">Live Status</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#offers">Offers</a>
-            <a href="#help">Help</a>
-          </nav>
-
-          <div className="nav-actions">
-            <button className="btn btn-ghost">Sign in</button>
-            <button className="btn btn-primary">Book Ticket</button>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       <section className="hero">
         <div className="container hero-grid">
@@ -187,18 +167,8 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="footer">
-        <div className="container footer-row">
-          <div>© 2026 RailVista. All rights reserved.</div>
-          <div className="footer-links">
-            <a href="#terms">Terms</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
+      
     </div>
   );
 }
