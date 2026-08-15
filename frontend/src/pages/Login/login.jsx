@@ -1,6 +1,8 @@
 // components/LoginPage.jsx
 import { useState } from "react";
 import "./login.css";
+import Navbar from "../../components/navbar/navbar.jsx";
+import Footer from "../../components/footer/footer.jsx";
 
 function LoginPage() {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -30,6 +32,7 @@ function LoginPage() {
 
   return (
     <div className="login-page">
+      <Navbar />
       <div className="login-card">
         <div className="login-header">
           <h1 className="login-title">
@@ -125,6 +128,7 @@ function LoginPage() {
           </p>
         </form>
       </div>
+      <Footer />
     </div>
   );
 }

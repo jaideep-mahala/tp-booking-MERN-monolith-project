@@ -1,17 +1,18 @@
 import React from "react";
 import "./navbar.css";
-import logo from "../../../pages/Home/assets/logo.png";
+import logo from "../../pages/Home/assets/logo.png";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
   return (
     <header className="header">
       <div className="container nav">
-        <div className="brand">
+        <Link to="/" className="brand">
           <img src={logo} alt="RailVista Logo" className="brand-logo" />
           <span className="brand-name">RailVista</span>
-        </div>
+        </Link>
 
         <nav className="nav-links">
           <a href="#trains">Trains</a>

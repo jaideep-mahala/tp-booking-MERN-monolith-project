@@ -8,17 +8,18 @@
 .login-page {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 16px;
+  flex-direction: column;
+  align-items: stretch;
   background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.18), transparent 30%),
     radial-gradient(circle at bottom right, rgba(79, 70, 229, 0.14), transparent 28%),
     linear-gradient(135deg, #eef2ff 0%, #faf5ff 55%, #ffffff 100%);
 }
 
 .login-card {
+  align-self: center;
+  margin: auto 0;
   width: 100%;
-  max-width: 470px;
+  max-width: 800px;
   border-radius: 32px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.96);

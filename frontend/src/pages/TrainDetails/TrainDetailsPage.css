@@ -1,0 +1,152 @@
+.train-details-page {
+  padding: 24px 0;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.info-card,
+.summary-card,
+.profile-card,
+.payment-card,
+.admin-card,
+.status-panel,
+.pnr-box,
+.booking-card,
+.price-card,
+.search-panel,
+.train-card,
+.signup-form,
+.signup-copy,
+.history-card,
+.stat-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.info-card,
+.summary-card,
+.payment-card,
+.admin-card,
+.status-panel,
+.pnr-box,
+.search-panel,
+.booking-card,
+.price-card,
+.profile-card,
+.signup-form,
+.signup-copy,
+.history-card,
+.train-card {
+  padding: 24px;
+}
+
+.train-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.summary-card span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 18px;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2563eb;
+  margin-top: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 5px;
+  top: 22px;
+  bottom: -10px;
+  width: 2px;
+  background: #bfdbfe;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-bottom: 10px;
+}
+
+.timeline-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coach-list {
+  margin-top: 22px;
+}
+
+.coach-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.coach-row small {
+  display: block;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.amenity-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.amenity-grid span {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .train-summary-grid,
+  .detail-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .train-summary-grid,
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+}

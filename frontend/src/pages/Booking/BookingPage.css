@@ -1,0 +1,155 @@
+.booking-page {
+  padding: 32px 0;
+}
+
+.page-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #0057a8;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.page-topbar h1,
+.search-panel h1,
+.history-page h1,
+.pnr-page h1,
+.payment-page h1,
+.profile-page h1,
+.train-details-page h1,
+.signup-page h1,
+.admin-page h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.primary-btn, .secondary-btn, .filter-btn, .method-btn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #0b5bd3, #1a7ae0);
+  color: white;
+  padding: 12px 18px;
+}
+
+.secondary-btn {
+  background: #eff6ff;
+  color: #0b5bd3;
+  padding: 10px 14px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.booking-card, .price-card, .payment-card, .summary-card, .status-panel, .pnr-box, .search-panel, .signup-form, .signup-copy, .admin-card, .stat-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.booking-card, .price-card, .payment-card, .summary-card, .status-panel, .pnr-box, .search-panel, .signup-form, .signup-copy, .admin-card {
+  padding: 24px;
+}
+
+.journey-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.journey-summary div {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.journey-summary span,
+.summary-card span,
+.summary-row span,
+.status-grid span,
+.trip-item small,
+.history-meta,
+.coach-row small,
+.timeline-content small,
+.train-meta label,
+.route-row,
+.search-form-grid label,
+.info-grid label,
+.card-form label,
+.pnr-box label,
+.signup-form label {
+  color: #64748b;
+}
+
+.passenger-box {
+  margin-top: 20px;
+}
+
+.passenger-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.passenger-row input,
+.passenger-row select,
+.card-form input,
+.search-form-grid input,
+.search-form-grid select,
+.info-grid input,
+.pnr-box input,
+.signup-form input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.fare-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.total {
+  border-top: 1px solid #e2e8f0;
+  margin-top: 20px;
+  padding-top: 16px;
+  font-size: 1.1rem;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+  .passenger-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
